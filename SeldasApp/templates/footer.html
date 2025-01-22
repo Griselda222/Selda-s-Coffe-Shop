@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<footer id="contact" class="contact bg-about pt-3">
+    <div class="container-fluid ">
+        <div class="footer-top ">
+            <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <div class="single-footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html">Selda's</a>
+                        </div>
+                        <p>
+                            Selda’s Coffee Shop offers handcrafted coffees made from the finest beans, specialty teas,
+                            and freshly baked pastries that cater to every craving.
+                            It’s the perfect place to unwind, connect with friends, or enjoy a quiet moment alone in a
+                            warm, inviting atmosphere.
+                        </p>
+                        <div class="footer-contact">
+                            <p><a href="info@seldas.com">info@seldas.com</a></p>
+                            <p><a href="tel:+355682643681">+355 6826 43681</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 " >
+                    <div class="single-footer-widget">
+                        <h2>About Selda's</h2>
+                        <ul>
+                            <li><a href="{% url 'aboutPage' %}">About us</a></li>
+                            <li><a href="{% url 'healthPage' %}">Health benefits</a></li>
+                            <li><a href="{% url 'contactPage' %}">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-offset-1 col-md-4 col-sm-6">
+                    <div class="single-footer-widget">
+                        <p>Brew your perfect cup at home with our premium coffee packs! Click here to order and experience the taste of quality.</p>
+                        <a href="{% url 'shopPage' %}" class="btn btn-primary mt-30">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid sec_footer">
+            <div class="row">
+                <div class="col-6">
+                    <p>© 2025 Selda’s Coffee Shop. All rights reserved.</p>
+                </div>
+                <div class="col-6">
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/Fiordi Flamur Kallmeti" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/griselda.kallmeti" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+</footer>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+{% include 'navbar1.html' %}
+
+    <header class=" py-4">
+        <div class="container-fluid">
+            <h1 class="text-center">Selda's Coffee Shop</h1>
+        </div>
+    </header>
+
+    <section class="bg-light py-5">
+        <div class="container-fluid ">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="{% static 'images/coffeshop4.jpg' %}" class="img-fluid rounded" alt="Coffee shop interior">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>
+                        Welcome to Selda's Coffee Shop, your cozy corner for delightful coffee and warm conversations. Nestled in the heart of the city, we are dedicated to crafting the perfect cup of coffee while offering a relaxing ambiance for our customers.
+                    </p>
+                    <p>
+                        Our beans are sourced from the finest growers around the world, ensuring every sip you take is rich and full of flavor. From classic espresso to unique signature blends, we have something for every coffee lover.
+                    </p>
+                    <p>
+                        At Selda's Coffee Shop, it's not just about coffee; it's about creating memories. Whether you're here to work, catch up with friends, or simply unwind, we have a seat waiting for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h2>Our Values</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white shadow-sm rounded">
+                        <h4>Quality</h4>
+                        <p>We believe in offering only the best to customers. Quality is at the heart of everything we do.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white shadow-sm rounded">
+                        <h4>Community</h4>
+                        <p>We strive to build a warm and welcoming community where everyone feels at home.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white shadow-sm rounded">
+                        <h4>Sustainability</h4>
+                        <p>Our commitment to sustainability ensures that we care for the planet while serving our coffee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

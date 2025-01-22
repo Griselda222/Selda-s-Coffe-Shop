@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+{% include 'navbar.html' %}
+<main id="home">
+ 
+    <section class="container-fluid  ourstory">
+            <div class=" bg-about d-flex flex-column justify-content-center align-items-center text-center mt-5">
+                <h2>Our Story <span>Begins</span></h2>
+                <p>The story of this café began with a deep passion for the art of coffee. Driven by the desire to create
+                    the perfect cup, the journey started with sourcing the finest beans and learning the craft of brewing to
+                    perfection. Every detail was carefully considered, from the roasting process to the brewing techniques,
+                    with a focus on delivering bold, rich flavors that awaken the senses. The café quickly became known for
+                    its exceptional taste, attracting coffee lovers who appreciated the complexity and depth of each cup
+                    . Today, it remains a place where the love
+                    for great coffee is at the heart of every experience, bringing people together over the ultimate brew..
+                </p>
+            </div>       
+    </section>
+
+
+    <section class=" container-fluid  numbers">
+        <div class="row g-0">
+            <div class="col-4 text-center ">
+              <i class="fa-solid fa-mug-saucer"></i>
+                <h4>250</h4>
+                <p>VARIETES OF COFFEE</p>
+            </div>
+            <div class="col-4 text-center ">
+               <i class="fa-solid fa-clock"></i>
+                <h4>123</h4>
+                <p>HOURS OF TESTING</p>
+            </div>
+            <div class="col-4 text-center ">
+              <i class="fa-solid fa-shop"></i>
+                <h4>12</h4>
+                <p>COFFEE MARKETS</p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid my-5 text-center">
+        <h2>Our specials</h2>
+        <div class="row ">
+            <div class="col-8 col-md-6 col-lg-4 mb-3">
+                <div class="card" >
+                    <img src="{% static 'images/cappuccino_2.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">  
+                        A smooth blend of rich espresso, steamed milk, and creamy foam, topped with a touch of vanilla and a sprinkle of cinnamon. Perfectly crafted to warm your soul.</p>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col-8 col-md-6 col-lg-4 mb-3">
+                <div class="card"  >
+                    <img src="{% static 'images/cold_latte.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">A chilled delight,  cold latte combines rich espresso with creamy milk, delivering a perfectly balanced, refreshing coffee experience.</p>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col-8 col-md-6 col-lg-4 mb-3">
+                <div class="card" >
+                    <img src="{% static 'images/cappuccino_bisquit.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">The Cup of Selda is a signature blend, carefully crafted to offer a harmonious mix of bold espresso and smooth, creamy flavors—a perfect sip of indulgence in every cup.</p>
+                    </div>
+                  </div>
+
+            </div>
+
+        </div>
+    
+    </section>
+    <section class="bg-light py-5">
+      <div class="container-fluid ">
+          <div class="row align-items-center">
+              <div class="col-md-6">
+                  <img id= "hoverImage" src="{% static 'images/coffeshop5.jpg' %}" class="img-fluid rounded coffeshop3" alt="Coffee shop interior">
+              </div>
+              <div class="col-md-6">
+                  <h2>Factory products</h2>
+                  <p>
+                    Seldas Factory Products offer a wide range of high-quality items, utilizing modern technology and environmentally friendly practices. Their products are known for durability and top-tier performance.</p>
+                  <p>
+                    The company focuses on creating innovative products that meet the needs of the global market. Seldas is committed to sustainable development and the continuous improvement of its product line.
+                  </p>
+                  <p><a href="{% url 'shopPage' %}" class="link-dark">See products</a></p>
+
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <section class="reviews container-fluid ">
+        <div class="row justify-content-center ">
+        
+            <div class="col-12 text-center ">
+                <h2>REVIEWS</h2>
+        
+                <p>At Seldas, we truly value the feedback of our customers. The positive reviews and heartfelt comments we
+                    receive inspire us to continually i
+                    mprove and maintain the high standards we set for ourselves. Our customers’ experiences are a reflection
+                    of our dedication to quality coffee and exceptional service, and we are proud to see so many happy faces
+                    walk through our doors. Whether it’s about the rich flavors of our coffee, the welcoming atmosphere, or
+                    our attentive service,
+                    each review helps us grow and reminds us of the joy we bring to our community.</p>
+            </div>
+            <div class="col-4 ">
+                <div id="carouselExampleIndicators" class="carousel slide mb-15">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{% static 'images/happyclient2.jpg' %}" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'images/happyclient3.jpg' %}" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'images/happyclient4.jpg' %}" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+        </div>
+    
+    </section>
+
+    </main>
+    <script>
+    const image = document.getElementById('hoverImage');
+
+        const originalSrc = "{% static 'images/coffeshop5.jpg' %}";
+        const hoverSrc = "{% static 'images/coffeeshop2.jpg' %}";
+
+        image.addEventListener('mouseenter', () => {
+            image.src = hoverSrc;
+        });
+
+        image.addEventListener('mouseleave', () => {
+            image.src = originalSrc;
+        });
+        </script>
+{% endblock %}

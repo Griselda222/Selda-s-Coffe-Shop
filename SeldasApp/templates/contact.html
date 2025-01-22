@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+{% include 'navbar1.html' %}
+    <section id="contact" class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contact Us</h2>
+                {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                    <div id="alertSMS" class="alert alert-{{ message.tags }}>
+                         {% if message.tags == 'error' %} bg-danger-subtle text-emphasis-danger {% endif %}" role="alert">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+    
+                <form method="POST">
+                    {% csrf_token %}
+    
+                    <div class="mb-3">
+                        <label for="firstname" class="form-label">Your First Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your first name" name="emri">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastname" class="form-label">Your Last Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your last name" name="mbiemri">
+                    </div>
+    
+    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                    </div>
+    
+    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"
+                            name="koment"></textarea>
+                    </div>
+    
+    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Our Office</h3>
+                <p>123 Main Street, City, Country</p>
+                <p>Email: info@seldas.com</p>
+                <p>Phone: +355682643681</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3414724428444!2d19.821562516291845!3d41.323187476878005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350311b70c971d7%3A0xe0c2e0adbe3d4b83!2sPyramid%20of%20Tirana!5e0!3m2!1sen!2s!4v1737069254283!5m2!1sen!2s"
+                 width="500" height="400" style="border:0;" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let alertSMS = document.getElementById("alertSMS")
+            if (alertSMS) {
+                setTimeout(() => {
+                    const alertBootstrap = new bootstrap.Alert(alertSMS)
+                    alertBootstrap.close()
+
+                }, 5000)
+            }
+        })
+    </script>
+
+{% endblock %}

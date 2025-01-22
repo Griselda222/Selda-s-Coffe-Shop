@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+{% include 'navbar1.html' %}
+<section class="container-fluid factory mt-4  my-5">
+    <h1 class="text-center factoryh1">Factory products</h1>
+    <div class="row gy-4 ">
+        {% for factory in factorys %}
+        <div class="col-12 col-md-4 col-lg-3 mb-3">
+            <div class="card">
+                <img src="{{factory.fac_image.url}}" class="card-img-top produkt" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{factory.fac_name}}</h5>
+                    <p class="card-text" style="line-height: 1.1">{{factory.fac_description}}</p>
+                    <p class="text-success fw-bold">{{factory.fac_prize}}$</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a class="btn btn-primary" href="{% url 'signup' %}" role="button">Order now</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</section>
+
+
+{% endblock %}

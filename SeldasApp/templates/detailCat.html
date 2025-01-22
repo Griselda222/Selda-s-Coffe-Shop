@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+{% include 'navbar1.html' %}
+<main>
+
+    <section class="container my-5">
+
+        <h1 class="text-center">{{categoryDetail.category_name}}</h1>
+        <div class="row ">
+            {% for product in productCategory %}
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="card ">
+                    <img src="{{product.product_image.url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.product_name}}</h5>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</main>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% block content %}
+{% include 'navbar1.html' %}
+<section class="container-fluid my-5">
+    <h1 class="text-center mb-4">Menu</h1>
+    <div class="row g-4 ">
+        {% for category in categories %}
+        <div class="col-6 col-md-4 col-lg-4 mb-3">
+            <div class="card border-0 shadow-sm  text-center">
+                <img src="{{category.category_image.url}}">
+                <div class="card-body">
+                    <h5 class="card-title ">{{category.category_name}}</h5>
+                    <a class=" btn fill-btn btn-primary " href="{% url 'detailCatPage' category.pk %}" role="button">See more</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</section>
+{% endblock %}

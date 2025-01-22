@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cabin:ital,wght@0,400..700;1,400..700&family=Delicious+Handrawn&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Gruppo&family=Homemade+Apple&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5ecde;
+    font-family: "Questrial", serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2;
+    color:  #412d25
+}
+.btn{
+    background-color: #FFD700;
+    border: 2px solid #FFD700; 
+    padding: 10px 20px; 
+}
+.btn:hover {
+    background-color: #e6c200; 
+    border-color: #e6c200; 
+}
+.navbar{
+    background-color:#c9b69ef0;
+
+}
+
+.navbar a{
+    color:  #412d25;;}
+
+.numbers{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+ span {
+    font-family: "Allura", serif;
+}
+
+.reviews{
+padding-bottom: 20px;
+padding-top: 20px;
+}
+ .foto .fotoback{
+    height: 50vh;
+    width: 100%;
+}
+.copyright{
+    background-color: rgb(33, 21, 11);
+    color: rgba(255, 255, 255, 0.574);
+    text-align: center;
+    font-family: "Gruppo", sans-serif;
+}
+ footer.bg-about {
+    background-color: #412d25;
+    color: white;
+ }
+ footer a{
+    color: rgba(255, 255, 255, 0.805);
+    text-decoration: none;
+    margin: 10px;
+ }
+
+
+.sec_footer{
+    background-color:#2b1d17 ;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background-color: rgba(255, 255, 255, 0.603); 
+    border: none; 
+
+}
+.health .card:hover {
+    transform: translateY(-10px);
+}
+.health .card-header {
+    background-color: #ffd700;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.health .card-body {
+    padding: 20px;
+    background-color: white;
+}
+.health {
+    margin-top: 50px;
+}
+.health .title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+}
+.health .subtitle {
+    font-size: 1.5em;
+    color: #555555;
+    margin-bottom: 30px;
+}
+.health .feature-icon {
+    font-size: 50px;
+
+}
+.health .row {
+    margin-top: 40px;
+margin-bottom: 40px;}
+
+.fill-btn {
+    color: #412d25 ;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.fill-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: gold; 
+    z-index: -1; 
+    transition: width 0.3s ease;
+}
+
+.fill-btn:hover {
+    color: white ; 
+    border-color:gold; 
+}
+
+.fill-btn:hover::before {
+    width: 100%;
+}
+
+.fill-btn:focus {
+    outline: none; 
+}
+.facts-list {
+    list-style-type: none; }
+
+.container-fluid{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+h1{
+    padding-bottom: 30px;
+
+}
