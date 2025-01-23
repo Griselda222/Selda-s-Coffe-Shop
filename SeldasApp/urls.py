@@ -12,7 +12,5 @@ urlpatterns = [
     path("detail/<id>", views.detail, name="detailPage"),
     path("detailCat/<id>", views.detailCat, name="detailCatPage"),
     path("health/", views.health, name="healthPage"),
-    path('signup/', views.signup, name='signup'),
-    path('login/', views.user_login, name='login'), 
-    path('logout/', auth_views.LogoutView.as_view(), name='logout'), 
 ]
+
