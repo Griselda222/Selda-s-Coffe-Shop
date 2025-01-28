@@ -17,10 +17,10 @@ def order(request):
     context = {"products":products, "categories":categories}
     return render(request, "order.html", context)
 
-def shop(request):
+def factory(request):
     factorys=Factory.objects.all()
     context={"factorys":factorys}
-    return render(request, "shop.html",context)
+    return render(request, "factory.html",context)
 
 def detail(request,id):
     productDetail=Product.objects.get(pk=id)
