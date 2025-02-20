@@ -21,6 +21,8 @@ class Factory(models.Model):
     fac_description=models.TextField(max_length=500,null=True,blank=True)
     fac_image=models.ImageField(upload_to="factory/",null=True,blank=True)
     fac_prize=models.FloatField(max_length=20,null=True,blank=True)
+    def __str__(self):
+        return f"{ self.fac_name}"
 
 class Contact(models.Model):
     contact_name=models.CharField(max_length=50,null=True,blank=True)

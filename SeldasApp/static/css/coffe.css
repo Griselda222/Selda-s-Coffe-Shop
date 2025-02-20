@@ -11,15 +11,33 @@ body{
     line-height: 2;
     color:  #412d25
 }
+.container-fluid{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+h1{
+    padding-bottom: 30px;
+
+}
+
 .btn{
     background-color: #FFD700;
     border: 2px solid #FFD700; 
     padding: 10px 20px; 
 }
-.btn:hover {
+.btn:hover { /*Kur kalon mouse siper*/
     background-color: #e6c200; 
     border-color: #e6c200; 
 }
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background-color: rgba(255, 255, 255, 0.603); 
+    border: none; 
+
+}
+/* Navbar */
 .navbar{
     background-color:#c9b69ef0;
 
@@ -28,30 +46,23 @@ body{
 .navbar a{
     color:  #412d25;;}
 
+/*Section Numbers-Home */
 .numbers{
     padding-top: 40px;
     padding-bottom: 40px;
     
 }
-
+/* Titulli Ourstory */
  span {
     font-family: "Allura", serif;
 }
-
+/*Reviews*/
 .reviews{
 padding-bottom: 20px;
 padding-top: 20px;
 }
- .foto .fotoback{
-    height: 50vh;
-    width: 100%;
-}
-.copyright{
-    background-color: rgb(33, 21, 11);
-    color: rgba(255, 255, 255, 0.574);
-    text-align: center;
-    font-family: "Gruppo", sans-serif;
-}
+
+/* Footer */
  footer.bg-about {
     background-color: #412d25;
     color: white;
@@ -61,21 +72,14 @@ padding-top: 20px;
     text-decoration: none;
     margin: 10px;
  }
-
-
 .sec_footer{
     background-color:#2b1d17 ;
 }
 
-.card {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-    background-color: rgba(255, 255, 255, 0.603); 
-    border: none; 
 
-}
+/* Stilizime per kartet health benefits */
 .health .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px);  /*Leviz el lart me 10px*/
 }
 .health .card-header {
     background-color: #ffd700;
@@ -108,47 +112,39 @@ padding-top: 20px;
     margin-top: 40px;
 margin-bottom: 40px;}
 
+/* Stilizime per  butonat te menuja*/
 .fill-btn {
     color: #412d25 ;
     background-color: transparent;
-    position: relative;
+    position: relative;/*Elementet te pozicionohen brenda butonit*/
     overflow: hidden;
-    z-index: 1;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    z-index: 1;/*Butoni ka rend prioritar mbi el*/
+    transition: color 0.3s ease, border-color 0.3s ease;/*Ndryshimi i ngjyres se tekstit dhe kufirit*/
 }
 
 .fill-btn::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;/*Vendos sfondin e fshehur në cepin e majte te butonit*/
     width: 0;
     height: 100%;
     background-color: gold; 
-    z-index: -1; 
+    z-index: -1; /*Ky sfond vendoset nen tekstin e butonit*/
     transition: width 0.3s ease;
 }
 
-.fill-btn:hover {
+.fill-btn:hover { /*Efekte kur butoni eshte ne hover*/
     color: white ; 
     border-color:gold; 
 }
 
-.fill-btn:hover::before {
+.fill-btn:hover::before {/*Sfondi shfaqet gjate hover*/
     width: 100%;
 }
 
-.fill-btn:focus {
+.fill-btn:focus {/*Fokusimi i butonit*/
     outline: none; 
 }
-.facts-list {
-    list-style-type: none; }
 
-.container-fluid{
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
-h1{
-    padding-bottom: 30px;
 
-}
